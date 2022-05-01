@@ -29,6 +29,7 @@ background-color: #E5E5E5;
   min-width: 200px;
   border: 2px solid transparent;
   text-align: center;
+
   color: var(--primary-title-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -65,14 +66,14 @@ img{
   max-width:100%;
   height: auto;
 }
-/* .container{
+.container{
   width: 1200px;
   padding-left: 5px;
   padding-right: 5px;
   margin-left:  auto;
   margin-right:  auto;
   outline: 1px solid tomato;
-} */
+}
 
 /* Цвет основного текста #212121; */
 /* Вторичный цвет текста  #757575;*/
@@ -82,18 +83,32 @@ img{
 /*  основной цвет фона #E5E5E5; */
 /* вторичный цвет фона #F5F4FA; */
 /* third color fon #2F303A; */
+
 .button.primery{
   border: 2px solid blue;
 }
 .button.secondary{
   border: 2px solid green;
+
   color: var(--third-color-text);
   background-color:var(--second-background) ;
 }
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+}
+
 .page-header{
   background-color: var(--third-background);
 }
 .header-logo{
+  display: flex;
+  margin-right: 93px;
   color: #2196F3;
   font-family: 'Raleway';
   font-weight: 700;
@@ -104,8 +119,19 @@ img{
 .span{
   color: #000000;
 }
+.site-nav{
+  display: flex;
+}
+.site-nav .item:not(:last-child){
+  outline: 1px solid tomato;
+  margin-right: 50px;
+}
 .site-nav-link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
+
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -114,7 +140,27 @@ img{
   
 
 }
+.site-nav-link:hover,
+.site-nav-link:focus{
+ background-color: var(--accent-color);
+}
+.main-header{
+display: flex;
+align-items: center;
+}
+.contact-nav.list{
+  display: flex;
+  margin-left: auto;
+}
+/* .contact-nav .item:not(:last-child){
+ margin-right: 50px;
+} */
+.contact-nav .item{
+  margin-left: auto;
+  display: flex;
+}
 .contact-nav-link{
+  margin-right: 50px;
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -131,6 +177,7 @@ img{
   margin-top: 0;
   margin-bottom: 0;
   margin-bottom: 50px;
+
   outline: 1px solid blueviolet;
   color: #FFFFFF;
   background-color:var(--second-background) ;
@@ -148,9 +195,8 @@ img{
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
- 
-margin-left: auto;
-margin-right: auto;
+   margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   text-align: center;
@@ -168,7 +214,7 @@ margin-right: auto;
 .feature-title{
   margin-top: 0;
   margin-bottom: 60px;
-  /* padding-top: 50px; */
+
   color: var(--primery-title-color);
   font-weight: 700;
   font-size: 14px;
@@ -181,12 +227,14 @@ margin-right: auto;
 .feature-subtitle{
   margin-top: 0;
   margin-bottom: 24px;
+
   outline: 1px solid blue;
   text-align: center;
 }
 .feature-text{
   margin-top: 0;
   margin-bottom: 30px;
+
   color: var(--main-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -194,7 +242,6 @@ margin-right: auto;
 }
 /* team */
 .team-title{
-  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -273,6 +320,7 @@ color: #FFFFFF;
 
 body {
   margin: 0;
+
   font-family: sans-serif;
   line-height: 1.5;
   background-color: #edf2f7;
@@ -296,18 +344,7 @@ body {
   list-style: none;
 }
 
-.item {
-  padding: 10px;
-  /* Задаём всем элементам маржины слева и сверху */
-  margin-left: 10px;
-  margin-top: 10px;
-  /*  Задаём ширину элементов  */
-  flex-basis: calc((100% - 30px) / 3);
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
+
 
 .item h2 {
   margin-top: 0;
@@ -317,12 +354,7 @@ body {
 .item p {
   margin: 0;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-  font-size: 20px;
-  background-color: #edf2f7;
-}
+
 
 /* .container {
   display: flex;
@@ -333,11 +365,6 @@ body {
   margin-left: auto;
 } */
 
-body {
-  font-family: sans-serif;
-  line-height: 1.5;
-  background-color: #edf2f7;
-}
 
 /* .card {
   display: flex;
@@ -373,15 +400,7 @@ body {
   justify-content: center;
   margin: -8px;
 } */
-.container{
-  width: 980px;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* height: 280px; */
-  background-color: yellow;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .card{
   border-radius: 20px;
   overflow: hidden;
